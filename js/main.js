@@ -9,8 +9,7 @@ elForm.addEventListener("submit" , evt =>{
 
 function renderBackend(arr , element){
   const fragment = document.createDocumentFragment();
-  if(!arr == 0){
-    element.innerHTML = "";
+
     arr.forEach(e => {
       const newItem = document.createElement("li")
       const newImg = document.createElement("img")
@@ -28,8 +27,6 @@ function renderBackend(arr , element){
       fragment.appendChild(newItem);
     })
     element.appendChild(fragment)
-  }
-
 }
 
 
